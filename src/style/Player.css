@@ -1,0 +1,31 @@
+
+
+.playerContainer{
+    height: 700px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    border: 1px gray solid;
+    border-radius: 8px;
+}
+
+.musicCover{
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat !important;
+    background-size:400px !important;
+}
+
+.musicInfo{
+    display: flex;
+    height: 300px;
+    width: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.musicInfo audio{
+    margin: auto;
+}
