@@ -28,9 +28,9 @@ const Main = () => {
 
     return(
         <div className='mainContainer'>
-            <SongDataContext.Provider value={{ id, setId }}>
-                <Player data={data}/>
-                <MusicList data={data}/>
+            <SongDataContext.Provider value={{ id, setId,data }}>
+                <Player />
+                <MusicList />
             </SongDataContext.Provider>
 
 

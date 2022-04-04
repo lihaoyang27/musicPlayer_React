@@ -2,9 +2,8 @@ import '../style/MusicList.css'
 import {useContext} from "react";
 import SongDataContext from "../helpers/context";
 
-const MusicList = ({data}) => {
-    console.log('musicList',data)
-    const { id, setId} = useContext(SongDataContext)
+const MusicList = () => {
+    const { id, setId, data} = useContext(SongDataContext)
 
     return(
         <div className='listContainer'>

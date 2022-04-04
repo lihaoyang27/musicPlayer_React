@@ -3,14 +3,16 @@ import SongDataContext from "../helpers/context";
 import '../style/Player.css'
 
 
-const Player = ({data}) => {
-    console.log('player',data)
-    const { id, setId} = useContext(SongDataContext)
+const Player = ( )=> {
+
+    const { id, data} = useContext(SongDataContext)
     const [songId, setSongId] = useState(0)
+
 
     useEffect(()=>{
         setSongId(id - 1)
     },[id])
+
 
     return(
         <>
